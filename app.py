@@ -43,12 +43,13 @@ def predict_datapoint():
 #About page which has complete imformation about project
 @app.route('/about')
 def about():
-    image_filename = "images.jpg"
+    image_filename = "images.avif"
     return render_template('about.html', image_filename=image_filename)    
 
 @app.route('/portfolio')
 def portfolio():
-    return render_template('portfolio.html')
+    image_filename = "img1.png"
+    return render_template('portfolio.html', image_filename=image_filename)
 
 
 

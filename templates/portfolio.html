@@ -152,7 +152,7 @@
                 <span id="element"></span>
             </div>
             <div class="rightSection">
-                <img src="img1.png" alt="">
+                <img src="{{url_for('static', filename=image_filename)}}">
             </div>
     
 
@@ -160,16 +160,38 @@
 <hr>
         <section class="secondSection">
             <span class = "text-grey">What i have done so far</span>
-            <h1>Work Experience</h1>
+            <h1>Skill Set</h1>
 
             <div class="box">
                 <div class="vertical">
-                    <img class = "image-top" src="img2.png" alt="">
+                    <img class = "image-top" src="{{url_for('static', filename=image_filename1)}}" alt="">
                     <div class="vertical-title">
-                        Machine Learning Engineer
+                        Data Scientist
                     </div>
                     <div class="vertical-desc">
-                        NLP Engineer
+                        Child image prediction model from parents images
+                    </div>
+
+                </div>
+
+                <div class="vertical">
+                    <img class = "image-top" src="img2.png" alt="">
+                    <div class="vertical-title">
+                        Natural Language Pocessing
+                    </div>
+                    <div class="vertical-desc">
+                        Speech Recognisation Sytem
+                    </div>
+
+                </div>
+
+                <div class="vertical">
+                    <img class = "image-top" src="img2.png" alt="">
+                    <div class="vertical-title">
+                        Deep Learning
+                    </div>
+                    <div class="vertical-desc">
+                        ANN project for ML model
                     </div>
 
                 </div>
@@ -180,29 +202,7 @@
                         Machine Learning Engineer
                     </div>
                     <div class="vertical-desc">
-                        NLP Engineer
-                    </div>
-
-                </div>
-
-                <div class="vertical">
-                    <img class = "image-top" src="img2.png" alt="">
-                    <div class="vertical-title">
-                        Machine Learning Engineer
-                    </div>
-                    <div class="vertical-desc">
-                        NLP Engineer
-                    </div>
-
-                </div>
-
-                <div class="vertical">
-                    <img class = "image-top" src="img2.png" alt="">
-                    <div class="vertical-title">
-                        Machine Learning Engineer
-                    </div>
-                    <div class="vertical-desc">
-                        NLP Engineer
+                        NLP model using ml (nltk library)
                     </div>
 
                 </div>
