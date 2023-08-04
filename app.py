@@ -14,7 +14,8 @@ app = application
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    image_filename = "welcomeimage.jpeg"
+    return render_template('index.html', image_filename=image_filename)
 
 @app.route('/predictdata', methods=['GET', 'POST'])
 def predict_datapoint():
@@ -39,7 +40,17 @@ def predict_datapoint():
         predict_pipeline=PredictPipeline()
         results=predict_pipeline.predict(pred_df)
         return render_template('home.html',results=results[0])
-    
+#About page which has complete imformation about project
+@app.route('/about')
+def about():
+    image_filename = "images.jpg"
+    return render_template('about.html', image_filename=image_filename)    
+
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
+
+
 
 if __name__=="__main__":
     app.run(host="0.0.0.0",debug=True)
